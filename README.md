@@ -1,2 +1,2 @@
 # cs472_homepage
- homepage project for web application programming (cs472) at MIU
+ Lab 1: homepage project for web application programming (cs472) at MIU
