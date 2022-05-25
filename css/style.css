@@ -50,10 +50,17 @@ a:hover {
 	display:inline; position: relative; 
 }
 
-/* reverses list order*/
 ol {
-    transform: rotate(180deg);
+	list-style-type: decimal-leading-zero;
 }
-ol > li {
+
+/* reverses list order*/
+ul {
+	list-style-type: decimal;
+    transform: rotate(180deg);
+	margin: 1em;
+}
+ul > li {
     transform: rotate(-180deg);
+	
 }
