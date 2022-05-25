@@ -18,7 +18,8 @@ a:link {
 a:visited{
 	color:deeppink;
 }
-	
+	/*end color theming*/
+
 body {background-image: url=("../images/green-electronic-circuit-board-background-header-1356012094.jpg");
     background-repeat: no-repeat; background-position: top left;
 }
@@ -47,4 +48,12 @@ a:hover {
 
 .validator{
 	display:inline; position: relative; 
+}
+
+/* reverses list order*/
+ol {
+    transform: rotate(180deg);
+}
+ol > li {
+    transform: rotate(-180deg);
 }
