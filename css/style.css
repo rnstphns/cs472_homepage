@@ -53,7 +53,7 @@ a:hover {
 }
 
 .validator{
-	display:inline; position: relative; 
+	display:inline; position:relative; justify-content: flex-end; 
 }
 
 ol {
@@ -69,4 +69,11 @@ ul {
 ul > li {
     transform: rotate(-180deg);
 	
+}
+.sublist {
+	list-style-type: circle;
+}
+.validator{
+    flex-direction: row;
+    flex-flow: nowrap;
 }

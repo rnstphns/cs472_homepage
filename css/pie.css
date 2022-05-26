@@ -1,0 +1,61 @@
+/*CSS for Grandma's Pie Recipe page*/
+h1{
+    color: #a4a400;
+    background-color: #f0f0f0;
+    font-family: 'Lucida Sans Unicode', 'Helvetica', 'Arial', sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    font: 22pt bold;
+    letter-spacing: .25em;
+}
+h2{
+    color: #a4a400;
+    background-color: #f0f0f0;
+    font-family: 'Lucida Sans Unicode', 'Helvetica', 'Arial', sans-serif;
+    text-decoration: underline;
+    text-align: left;
+    font: 18pt; 
+    letter-spacing: .25em;
+}
+body{
+    background-color: white;
+    color: #404040;
+    font: 11pt;
+    font-family: Georgia, 'Garamond',  serif;
+    background-image: url(../recipe/recipeImages/silverware.jpg);
+    background-repeat: repeat-x repeat-y;
+    background-attachment: fixed;
+}
+.strike{
+    text-decoration:line-through;
+}
+.comment pre{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #FFFFA8;
+}
+.validator{
+    flex-direction: row;
+    flex-flow: nowrap;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+.tooltip .hoverText{
+    visibility: hidden;
+    text-align: center;
+    background-color: tan;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+} 
+.tooltip:hover .hoverText{
+    visibility: visible;
+}
+ul{
+    list-style-image: url(../recipe/recipeImages/pie_icon.gif);
+}
