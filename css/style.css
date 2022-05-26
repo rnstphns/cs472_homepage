@@ -20,18 +20,24 @@ a:visited{
 }
 	/*end color theming*/
 
-body {background-image: url=("../images/green-electronic-circuit-board-background-header-1356012094.jpg");
-    background-repeat: no-repeat; background-position: top left;
+.banner-image {
+	background-image: url(../images/green-electronic-circuit-board-background-header-1356012094.jpg);
+	background-attachment:initial;
 }
 
 #profile-photo { display: inline-block; position: relative; 
-    width: 300px; height: 300px; overflow: hidden; border-radius: 50%; } 
+    width: 300px; height: 300px; overflow: hidden; border-radius: 50%; 
+	
+} 
 
 #profile-photo img { width: auto; height: 100%; }
 
-h1 {color: white; text-shadow: black 2px 2px; text-align: center; height: 10vh;}  
 
-h1, h2, h3 {font-family: Courier, serif;
+h1 {color: white; text-shadow: black 2px 2px; text-align: center; height: 10vh;
+	
+}  
+
+h1, h2, h3 {font-family: Courier, serif; z-index: 10;
 }
 
 p, li, span {font-family: Garamond, serif;
@@ -56,7 +62,7 @@ ol {
 
 /* reverses list order*/
 ul {
-	list-style-type: decimal;
+	list-style-type:decimal;
     transform: rotate(180deg);
 	margin: 1em;
 }
