@@ -23,11 +23,13 @@ body{
     font: 11pt;
     font-family: Georgia, 'Garamond',  serif;
     background-image: url(../recipe/recipeImages/silverware.jpg);
-    background-repeat: repeat-x repeat-y;
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 .strike{
     text-decoration:line-through;
+    position: relative;
+    display: inline-block;
 }
 .comment pre{
     font-style: italic;

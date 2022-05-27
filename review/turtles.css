@@ -1,0 +1,41 @@
+body{
+    background-image: url(./images/background.png);
+    font-family: "Veranda", "Tahoma", sans-serif;
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    background-image: url("./images/bannerbg.png");
+    background-repeat: repeat-x;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    text-shadow: 3px 3px #999999;
+}
+.content-area{
+    size: 800px;
+    position: static left 50% right 50%;
+    border: gray;
+    border-width: 4px;
+    border-radius: 20px;
+}
+.overview{
+    position: relative top right;
+}
+.reviews{
+    column-count: 2;
+    column-gap: 3%;
+    margin: 2%;
+    padding: 5px;
+}
+.reviews q{
+    font-size: 8pt;
+    font-weight: bold;
+    background-color:#e8dc9b;
+    border: 2px;
+    border-color:gray;
+    border-radius: 10px;
+    word-wrap: normal;
+}
