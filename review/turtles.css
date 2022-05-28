@@ -4,6 +4,9 @@ body{
     font-size: 8pt;
     margin: 0;
     padding: 0;
+    display:flex;
+    justify-content: center;
+    align-content: center;
 }
 .banner{
     background-image: url("./images/bannerbg.png");
@@ -21,10 +24,14 @@ h1{
     border-radius: 20px;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-content: center;
+    
 }
 .overview{
+    width: 250px;
+    background-color: #A2B964;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 8pt;
     grid-column: 3/4;
     grid-row:auto;
    
@@ -46,4 +53,11 @@ h1{
     border-color:gray;
     border-radius: 10px;
     word-wrap: normal;
+}
+.page p{
+    text-align: center;
+}
+.validator{
+    opacity: 50%;
+    justify-content: bottom right;
 }
