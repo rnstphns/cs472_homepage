@@ -40,24 +40,6 @@ body{
     flex-direction: row;
     flex-flow: nowrap;
 }
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-  }
-.tooltip .hoverText{
-    visibility: hidden;
-    text-align: center;
-    background-color: tan;
-    border-radius: 6px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-} 
-.tooltip:hover .hoverText{
-    visibility: visible;
-}
 ul{
     list-style-image: url(../recipe/recipeImages/pie_icon.gif);
 }
