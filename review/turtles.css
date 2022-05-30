@@ -4,7 +4,6 @@ body{
     font-size: 8pt;
     margin: 0;
     padding: 0;
-    display:block;
 }
 .banner{
     background-image: url("./images/bannerbg.png");
@@ -55,7 +54,7 @@ h1{
     border-radius: 10px;
     word-wrap: normal;
 }
-.page p{
+.page > p{
     text-align: center;
 }
 .validator{
