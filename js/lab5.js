@@ -241,9 +241,11 @@ printFibo(10, 13, 21);
 // a. Login Form: Add code such that when the Submit button is clicked, the values entered in the input fields are printed to the Console.
 // b. New Product Form: Add code such that when the Submit button is clicked, the values entered in the input fields are displayed in a pop-up window.
 
+//Embedded (inline) in the respective html files
+
 // 15. Using JavaScript and HTML and CSS, implement a webpage that displays a working, ticking counter Clock, that counts/displays the current Date and time of the browser host, in the format: 2019-11-4 12:16:01  
 
-//Moved to clock.js
+//Embedded (inline) in scriptTest.html
 
 // Please submit your code as a single zip file attachment to Sakai and also push it to your github repository.
 //-- Enjoy! --//
