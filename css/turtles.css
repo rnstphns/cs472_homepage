@@ -4,6 +4,11 @@ body{
     font-size: 8pt;
     margin: 0;
     padding: 0;
+    
+}
+article{
+    display: flex;
+    justify-content: center;
 }
 .banner{
     background-image: url("../review/images/bannerbg.png");
@@ -14,17 +19,15 @@ h1{
     text-align: center;
     text-shadow: 3px 3px #999999;
 }
-.content-area {
+.content-area{
     width: 800px;
     height: auto;
     border: gray;
     border-width: 4px;
     border-radius: 20px;
-
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    
+    display: grid;
+    grid-template-columns: 550px, 250px;
+    grid-template-rows: 1fr;
 }
 .overview{
     width: 250px;
@@ -33,9 +36,21 @@ h1{
     padding: 10px;
     font-family: Arial, sans-serif;
     font-size: 8pt;
-    
-   
+    grid-column: 2;
+    grid-row: 1;
 }
+.reviews-wrapper{
+    grid-column: 1;
+    grid-row: 1;
+}
+.reviews-wrapper > header{
+    background-image: url("../review/images/rbg.png");
+    background-repeat: repeat-x;
+    color: red;
+    font-size: 56pt;
+    font-weight: bold;
+    vertical-align: middle;
+} 
 .reviews{
     column-count: 2;
     column-gap: 3%;
@@ -43,7 +58,6 @@ h1{
     padding: 5px;
     width: 550px;
     height:auto;
-    
 }
 .reviews q{
     font-size: 8pt;
@@ -59,5 +73,6 @@ h1{
 }
 .validator{
     opacity: 50%;
-    justify-content:flex-end;
+    display: flex;
+    justify-content: right;
 }
