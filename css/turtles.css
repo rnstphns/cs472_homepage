@@ -14,20 +14,22 @@ article{
     background-image: url("../review/images/bannerbg.png");
     background-repeat: repeat-x;
     text-align: center;
+    border-top-left-radius: 20px;
 }
 h1{
     text-align: center;
     text-shadow: 3px 3px #999999;
 }
 .content-area{
-    width: 800px;
+    width: auto;
     height: auto;
-    border: gray;
-    border-width: 4px;
+    border: solid gray;
+    border-width: 0 4px;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 550px, 250px;
     grid-template-rows: 1fr;
+    
 }
 .overview{
     width: 250px;
@@ -38,10 +40,13 @@ h1{
     font-size: 8pt;
     grid-column: 2;
     grid-row: 1;
+    z-index: -1;
+    border-top-right-radius: 20px;
 }
 .reviews-wrapper{
     grid-column: 1;
     grid-row: 1;
+    z-index: -1;
 }
 .reviews-wrapper > header{
     background-image: url("../review/images/rbg.png");
