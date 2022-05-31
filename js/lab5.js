@@ -80,9 +80,10 @@ function filterLongWords(strArray, lengthLimit) {
     }
 }
 // 8. Write a function named, computeSumOfSquares, that takes as input, an array of numbers and calculates and returns the sum of the squares of each number in the input array. E.g. computeSumOfSquares([1,2,3]) should be computed as 12 + 22 +32 = 14. Note: Write your Javascript code without using Imperative programming. i.e. Do NOT use any explicit looping construct; instead use functional programming style/approach.
+//imperitive
 function computeSumOfSquares(numArr) {
     let sum = 0;
-    //imperitive
+    
     if (Array.isArray(numArr)) {
         for (let i = 0; i < numArr.length; i++) {
             sum += numArr[i] * numArr[i];
@@ -91,32 +92,33 @@ function computeSumOfSquares(numArr) {
     } else {
         return "input must be array";
     }
+ }
 
-    // recursive. doesn't work yet.
+// recursive. doesn't work yet.
+// function computeSumOfSquares(numArr) {
+//     if (Array.isArray(numArr)) {
+//         let total = 0;
+//         numArr.forEach(num);{
+//             total += square(num);
+//         }
+//         return total;
+//     } else {
+//         return "input must be array";
+//     }
+    
+// }
+// function square(num){
+//     return num * num;
+// }
 
-    // if (Array.isArray(numArr)) {
-    //     let arr = numArr;
-    //     if (arr.length == 0) {
-    //         return sum;
-    //     } else {
-    //         sum += arr[0] * arr[0];
-    //         arr.shift();
-    //         computeSumOfSquares(arr);
-    //     }
-    // } else {
-    //     return "input must be array";
-    // }
-
-}
 // 9. Write a function named, printOddNumbersOnly, that takes as input, an array of integral numbers and it finds and prints only the numbers which are odd.
 function printOddNumbersOnly(arr) {
     if (Array.isArray(arr)) {
         let odds = [];
-        for (let i = 0; i < arr.length; i++) {
-            if (!(arr[i] % 2 == 0))
-                odds.push(arr[i]);
-        }
-        //return odds;
+        arr.forEach((element) => {
+            if(!(element % 2 == 0))
+                odds.push(element);  
+        });
         console.log(odds);
     } else {
         return "input must be array";
@@ -127,11 +129,10 @@ function printOddNumbersOnly(arr) {
 function computeSumOfSquaresOfEvensOnly(arr) {
     if (Array.isArray(arr)) {
         let sum = 0;
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 == 0) {
-                sum += arr[i] * arr[i];
-            }
-        }
+        arr.forEach((element) => {
+           if(element % 2 == 0)
+            sum += element * element; 
+        });
         return sum;
     } else {
         return "input must be array";
