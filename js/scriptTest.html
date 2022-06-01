@@ -7,41 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 5 JavaScript Test</title>
     <script src="lab5.js" type="text/javascript"></script>
+    <script defer src="clock.js"></script>
 </head>
 
 <body>
+    <h1 id="clock"></h1>
     <style>
-        #clock {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: xx-large;
+        #clock{
             text-align: center;
+            font-family:'Courier New', Courier, monospace;
+            font-size: 500%;
         }
     </style>
-    <div id="clock"></div>
-    <script>
-        function currentDatetime() {
-            let date = new Date();
-            let day = date.getDate();
-            let month = date.getMonth() + 1;
-            let year = date.getFullYear();
-            let hh = date.getHours();
-            let mm = date.getMinutes();
-            let ss = date.getSeconds();
-
-            hh = (hh < 10) ? "0" + hh : hh;
-            mm = (mm < 10) ? "0" + mm : mm;
-            ss = (ss < 10) ? "0" + ss : ss;
-
-            let time = year + "-" + month + "-" + day + " " + hh + ":" + mm + ":" + ss;
-
-
-            document.getElementById("clock").innerText = time;
-            document.getElementById("clock").textContent = time;
-            setTimeout(currentDatetime, 1000);
-
-        }
-        currentDatetime();
-    </script>
 </body>
 
 </html>
