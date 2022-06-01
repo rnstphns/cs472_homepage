@@ -1,3 +1,8 @@
+/*
+ @author mrstephens
+ @since 2022-05-30
+*/
+
 // Implement code for the following JavaScript functions, and be sure to use "use strict";
 "use strict";
 // 1. Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
