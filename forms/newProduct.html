@@ -38,7 +38,7 @@
         <h2>
             New Product Form
         </h2>
-        <form class="row g-3">
+        <form class="row g-3" onsubmit="submit_form()">
             <div class="col-md-6">
                 <label for="inputProductNo" class="form-label">Product Number</label>
                 <input type="text" class="form-control" id="inputProductNo">
@@ -81,6 +81,17 @@
                 </div>
             </div>
         </form>
+        <script>
+            function submit_form() {
+                const prodNo = document.getElementById('inputProductNo').value;
+                const quantity = document.getElementById('inputQuantity').value;
+                const prodName = document.getElementById('inputName').value;
+                const supplier = document.getElementById('inputSupplier').value;
+                const price = document.getElementById('inputPrice').value;
+                const date = document.getElementById('inputDate').value;
+                alert(prodNo + "\n" + quantity + "\n" + prodName + "\n" + supplier + "\n" + price + "\n" + date + " entered.");
+            }
+        </script>
     </div>
 </body>
 
