@@ -38,22 +38,22 @@
         <h2>
             New Product Form
         </h2>
-        <form class="row g-3" onsubmit="submit_form()">
+        <form class="row g-3" id="product-form">
             <div class="col-md-6">
                 <label for="inputProductNo" class="form-label">Product Number</label>
-                <input type="text" class="form-control" id="inputProductNo">
+                <input type="text" class="form-control" id="inputProductNo" required>
             </div>
             <div class="col-md-6">
                 <label for="inputQuantity" class="form-label">Quantity in stock</label>
-                <input type="number" class="form-control" id="inputQuantity" placeholder="0">
+                <input type="number" class="form-control" id="inputQuantity" placeholder="0" required>
             </div>
             <div class="col-md-6">
                 <label for="inputName" class="form-label">Name</label>
-                <input type="text" class="form-control" id="inputName">
+                <input type="text" class="form-control" id="inputName" required>
             </div>
             <div class="col-md-6">
                 <label for="inputSupplier" class="form-label">Supplier:</label>
-                <select class="form-select" id="inputSupplier">
+                <select class="form-select" id="inputSupplier" required>
                 <option selected>Select a supplier</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -62,11 +62,11 @@
             </div>
             <div class="col-md-6">
                 <label for="inputPrice" class="form-label">Unit Price</label>
-                <input type="number" class="form-control" id="inputPrice" placeholder="0.0">
+                <input type="number" class="form-control" id="inputPrice" placeholder="0.0" required>
             </div>
             <div class="col-md-6">
                 <label for="inputDate" class="form-label">Date Supplied</label>
-                <input type="date" class="form-control" id="inputDate" placeholder="yyyy-mm-dd">
+                <input type="date" class="form-control" id="inputDate" placeholder="yyyy-mm-dd" required>
                 <div id="dateHelp" class="form-text">Enter a valid Date.</div>
             </div>
             <div class="row justify-content-end">
@@ -81,17 +81,7 @@
                 </div>
             </div>
         </form>
-        <script>
-            function submit_form() {
-                const prodNo = document.getElementById('inputProductNo').value;
-                const quantity = document.getElementById('inputQuantity').value;
-                const prodName = document.getElementById('inputName').value;
-                const supplier = document.getElementById('inputSupplier').value;
-                const price = document.getElementById('inputPrice').value;
-                const date = document.getElementById('inputDate').value;
-                alert(prodNo + "\n" + quantity + "\n" + prodName + "\n" + supplier + "\n" + price + "\n" + date + " entered.");
-            }
-        </script>
+    
     </div>
 </body>
 
